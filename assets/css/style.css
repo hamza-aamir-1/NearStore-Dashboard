@@ -1,0 +1,55 @@
+/* Navbar */
+.navbar{
+    box-shadow: 0px 0px 15px rgb(200, 200, 200);
+}
+.nav_link{
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+}
+.nav_link:hover{
+    color: black;
+}
+
+/* Dash */
+.dash_section_heading{
+    font-size: 18px;
+    font-weight: 700;
+}
+.dash_overview_sm_box{
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+}
+.dash_overview_sm_box_icon{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.dash_overview_sm_box_icon_total{
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+}
+.dash_overview_sm_box_icon_process{
+    background-color: rgba(0, 0, 255, 0.2);
+    font-size: 25px;
+    color: blue;
+}
+.dash_overview_sm_box_icon_ship{
+    background-color: rgba(255, 217, 0, 0.3);
+    color: goldenrod;
+}
+.dash_overview_sm_box_icon_deliver{
+    background-color: rgba(0, 128, 0, 0.2);
+    color: green;
+}
+.dash_overview_sm_box_text{
+    font-size: 16px;
+}
+.dash_overview_sm_box_num{
+    font-size: 20px;
+    font-weight: 700;
+}

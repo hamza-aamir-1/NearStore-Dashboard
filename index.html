@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <title>Dashboard NearStore</title>
 
     <!-- Bootstrap Icons CDN -->
@@ -20,22 +21,24 @@
   </head>
   <body>
     <!-- === Navbar === -->
-    <nav class="navbar navbar-expand navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Navbar</a>
+    <nav class="navbar navbar-expand">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand navbar_brand d-flex align-items-center" href="index.html">
+          <img src="assets/img/logo-text.png" width="175px" class="pe-2" alt="">
+        </a>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link nav_link" href="#">
               <i class="bi bi-moon-fill"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link nav_link" href="#">
               <i class="bi bi-bell-fill"></i>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link nav_link" href="#">
               <i class="bi bi-box-arrow-right"></i>
             </a>
           </li>
@@ -43,6 +46,77 @@
       </div>
     </nav>
     <!-- Navbar -->
+
+    <!-- === Main === -->
+    <main class="p-4 container-fluid">
+
+      <!-- Dashboard Overview -->
+      <section class="">
+        <div class="dash_section_heading">
+          Dashboard Overview
+        </div>
+        <div class="row mt-1 g-3">
+
+          <div class="col-lg-3 col-6">
+            <div class="d-flex align-items-center dash_overview_sm_box p-3">
+              <div class="dash_overview_sm_box_icon dash_overview_sm_box_icon_total me-2">
+                <i class="bi bi-cart2"></i>
+              </div>
+              <div>
+                <div class="dash_overview_sm_box_text">Total Orders</div>
+                <div class="dash_overview_sm_box_num">1808</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="d-flex align-items-center dash_overview_sm_box p-3">
+              <div class="dash_overview_sm_box_icon dash_overview_sm_box_icon_process me-2">
+                <i class="bi bi-arrow-repeat"></i>
+              </div>
+              <div>
+                <div class="dash_overview_sm_box_text">Order Processing</div>
+                <div class="dash_overview_sm_box_num">708</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="d-flex align-items-center dash_overview_sm_box p-3">
+              <div class="dash_overview_sm_box_icon dash_overview_sm_box_icon_ship me-2">
+                <i class="bi bi-truck"></i>
+              </div>
+              <div>
+                <div class="dash_overview_sm_box_text">Order Shipped</div>
+                <div class="dash_overview_sm_box_num">1002</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="d-flex align-items-center dash_overview_sm_box p-3">
+              <div class="dash_overview_sm_box_icon dash_overview_sm_box_icon_deliver me-2">
+                <i class="bi bi-check2-all"></i>
+              </div>
+              <div>
+                <div class="dash_overview_sm_box_text">Order Delivered</div>
+                <div class="dash_overview_sm_box_num">98</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Recent Orders -->
+      <section class="mt-4">
+        <div class="dash_section_heading">
+          Recent Orders
+        </div>
+      </section>
+
+    </main>
+    <!-- Main -->
 
     <!-- Bootstrap JS Link -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
