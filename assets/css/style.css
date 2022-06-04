@@ -11,7 +11,10 @@
     color: black;
 }
 
-/* Dash */
+/*  === Dash === */
+.dash_main{
+    background-color: rgba(200, 200, 200, 0.15);
+}
 .dash_section_heading{
     font-size: 18px;
     font-weight: 700;
@@ -19,6 +22,7 @@
 .dash_overview_sm_box{
     border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
+    background-color: white;
 }
 .dash_overview_sm_box_icon{
     width: 45px;
@@ -52,4 +56,53 @@
 .dash_overview_sm_box_num{
     font-size: 20px;
     font-weight: 700;
+}
+
+/* Recent Orders */
+.dash_recent_table{
+    border: 1px solid rgb(200, 200, 200);
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+}
+.dash_recent_table_head{
+    background-color: rgba(200, 200, 200, 0.3);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.dash_recent_table_head > td{
+    padding: 10px 10px;
+}
+.dash_recent_table_row{
+    border: 1px solid rgb(200, 200, 200);
+}
+.dash_recent_table_row > td{
+    padding: 8px 10px;
+    max-width: 600px;
+    font-size: 14px;
+}
+.dash_recent_table_row_cancel{
+    background-color: rgba(255, 0, 0, 0.1);
+    color: red;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.dash_recent_table_row_deliver{
+    background-color: rgba(0, 255, 0, 0.1);
+    color: green;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.dash_recent_table_row_ship{
+    background-color: rgba(255, 217, 0, 0.2);
+    color: goldenrod;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.dash_recent_table_row_process{
+    background-color: rgba(0, 0, 255, 0.1);
+    color: blue;
+    padding: 2px 10px;
+    border-radius: 10px;
 }
