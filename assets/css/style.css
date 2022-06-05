@@ -79,8 +79,6 @@
 .dash_recent_table{
     width: 100%;
     border: 1px solid red;
-    /* display: block;
-    overflow-x: auto; */
 }
 .dash_recent_table_head{
     background-color: rgba(200, 200, 200, 0.3);
@@ -139,4 +137,26 @@
 }
 .dash_recent_table_row_amount{
     min-width: 135px;
+}
+
+/* === Products === */
+.products_filter_input,
+.products_filter_select,
+.products_filter_btn{
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    padding: 8px 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+}
+.products_filter_btn{
+    border: rgba(255, 217, 0, 0.4);
+    background-color: rgba(255, 217, 0, 0.4);
+    transition-duration: 0.3s;
+    font-weight: 600;
+}
+.products_filter_btn:hover{
+    border: rgba(255, 217, 0, 0.7);
+    background-color: rgba(255, 217, 0, 0.7);
 }
