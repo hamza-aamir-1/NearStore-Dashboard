@@ -162,7 +162,7 @@
 
 /* Products Table */
 .products_table_product_name{
-    min-width: 190px;
+    min-width: 200px;
 }
 .products_table_category{
     min-width: 135px;
@@ -172,4 +172,23 @@
 }
 .products_table_status{
     min-width: 95px;
+}
+.products_table_view_icon,
+.products_table_edit_icon,
+.products_table_del_icon{
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.3s;
+}
+.products_table_view_icon{
+    font-size: 18px;
+}
+.products_table_view_icon{
+    color: black;
+}
+.products_table_edit_icon{
+    color: rgb(0, 200, 0);
+}
+.products_table_del_icon{
+    color: red;
 }
