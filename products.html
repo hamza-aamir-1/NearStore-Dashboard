@@ -123,10 +123,10 @@
 
     <!-- === Main === -->
     <main class="p-4 container-fluid dash_main">
-      <!-- Dashboard Overview -->
-      <section class="">
-        <div class="dash_section_heading">Products</div>
-        <form class="row mt-1 g-3 pb-4 px-3 pt-2 mt-3 dash_overview_sm_box">
+      <div class="dash_section_heading">Products</div>
+      <!-- Products Filter -->
+      <section class="dash_overview_sm_box my-4">
+        <form class="row g-3 p-4">
           <div class="col-lg-3 col-sm-6">
             <div class="d-flex align-items-center">
               <input class="products_filter_input" type="search" placeholder="Search by product name" name="" id="">
@@ -171,7 +171,31 @@
         </form>
       </section>
 
-      <!-- Recent Orders -->
+      <!-- Drop CSV Box -->
+      <section class="dash_overview_sm_box">
+        <form class="row gx-2 gy-3 p-4">
+          <div class="col-md-8">
+            <div class="products_drop_csv_input">
+              <input type="file" class="form-control shadow-none" name="" id="">
+              <!-- <div class="text-center py-2">
+                Drop CSV File
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex">
+              <div class="me-2 products_drop_csv_btn w-100">
+                <button class="form-control shadow-none" disabled>Upload</button>
+              </div>
+              <div class="products_drop_csv_btn w-100">
+                <button class="form-control shadow-none">Download</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Products Table -->
       <section class="mt-4">
         <div class="table-responsive something_callls p-0">
           <table class="dash_recent_table m-0">
@@ -513,6 +537,9 @@
 
     <!-- Bootstrap JS Link -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery Link -->
+    <script src="assets/js/jquery.js"></script>
 
     <!-- JS Link -->
     <script src="assets/js/index.js"></script>
