@@ -176,6 +176,9 @@
     background-color: white;
     padding: 10px;
 }
+.products_drop_csv_input > input:focus{
+    border-color: transparent;
+}
 .products_drop_csv_btn > button{
     background-color: rgba(0, 128, 0, 0.8);
     transition-duration: 0.3s;
@@ -218,4 +221,61 @@
 }
 .products_table_del_icon{
     color: red;
+}
+
+/* Add Product OffCanvas */
+#addProductOffCanvas{
+    width: 50%;
+}
+.add_product_img{
+    border: 1px dashed gray;
+    border-radius: 7px;
+}
+.add_product_img > input{
+    border-color: transparent;
+    outline: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+.add_product_img > input:focus{
+    border-color: transparent;
+}
+.add_product_label{
+    font-size: 14px;
+    font-weight: 500;
+}
+.add_product_input{
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    background-color: #E9E9E9;
+    border-color: transparent;
+    border-radius: 7px;
+}
+.add_product_input:focus{
+    border-color: silver;
+}
+.add_product_cancel_btn > button{
+    border: none;
+    background-color: #E9E9E9;
+    color: red;
+    padding: 10px;
+    transition-duration: 0.3s;
+}
+.add_product_cancel_btn > button:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+}
+.add_product_add_btn > button{
+    border: none;
+    background-color: rgb(0, 170, 0);
+    color: white;
+    padding: 10px;
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    #addProductOffCanvas{
+        width: 100%;
+    }
 }
