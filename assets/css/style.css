@@ -377,3 +377,22 @@
 .product_details_category > span:last-child{
     color: rgb(97, 97, 97);
 }
+
+
+
+/* === Orders Page === */
+.orders_table_product_time{
+    min-width: 100px;
+}
+.orders_table_product_action{
+    min-width: 100px;
+}
+.orders_table_status_select{
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    padding: 3px 6px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    cursor: pointer;
+}
