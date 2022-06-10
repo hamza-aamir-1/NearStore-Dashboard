@@ -45,6 +45,35 @@
     font-size: 18px;
     font-weight: 700;
 }
+.dash_overview_lg_box_1{
+    background-color: rgba(235, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 10px;
+}
+.dash_overview_lg_box_2{
+    background-color: rgba(0, 0, 235, 0.6);
+    text-align: center;
+    border-radius: 10px;
+}
+.dash_overview_lg_box_3{
+    background-color: rgba(0, 170, 0, 0.6);
+    text-align: center;
+    border-radius: 10px;
+}
+.dash_overview_lg_box_icon{
+    color: white;
+    font-size: 28px;
+}
+.dash_overview_lg_box_text{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.dash_overview_lg_box_num{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
 .dash_overview_sm_box{
     border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
