@@ -124,57 +124,11 @@
     <!-- === Main === -->
     <main class="p-4 container-fluid dash_main">
       <div class="dash_section_heading">Product Details</div>
-      <!-- Products Filter -->
-      <section class="dash_overview_sm_box my-4">
-        <form class="row g-3 p-4">
-          <div class="col-lg-3 col-sm-6">
-            <div class="d-flex align-items-center">
-              <input class="products_filter_input" type="search" placeholder="Search by product name" name="" id="">
-            </div>
-          </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="d-flex align-items-center">
-              <select class="products_filter_select" name="" id="">
-                  <option value="" hidden>Category</option>
-                  <option value="">Fish & Meat</option>
-                  <option value="">Fruit & Vegetables</option>
-                  <option value="">Fresh Seafood</option>
-                  <option value="">Drinks</option>
-                  <option value="">Organic Food</option>
-                  <option value="">Honey</option>
-                  <option value="">Beauty & Health</option>
-                  <option value="">Sports & Fitness</option>
-                  <option value="">Household Tools</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="d-flex align-items-center">
-                <select class="products_filter_select" name="" id="">
-                    <option value="" hidden>Price</option>
-                    <option value="">Low to High</option>
-                    <option value="">High to Low</option>
-                </select>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="d-flex align-items-center">
-              <button class="products_filter_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#addProductOffCanvas" aria-controls="addProductOffCanvas">
-                <i class="bi bi-plus-lg"></i>
-                  Add Product
-              </button>
-            </div>
-          </div>
-        </form>
-      </section>
-
-      <!-- Add Product OffCanvas -->
+      <!-- Edit Product OffCanvas -->
       <div class="offcanvas offcanvas-end" tabindex="-1" id="addProductOffCanvas" aria-labelledby="addProductOffCanvasLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="addProductOffCanvasLabel">Add Product</h5>
+          <h5 class="offcanvas-title" id="addProductOffCanvasLabel">Edit Product</h5>
           <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -270,343 +224,43 @@
         </div>
       </div>
 
-      <!-- Products Table -->
-      <section class="mt-4">
-        <div class="table-responsive something_callls p-0">
-          <table class="dash_recent_table m-0">
-            <thead>
-              <tr class="dash_recent_table_head">
-                <td>SKU</td>
-                <td class="products_table_product_name">PRODUCT NAME</td>
-                <td class="products_table_category">CATEGORY</td>
-                <td class="products_table_price">PRICE</td>
-                <td>STOCK</td>
-                <td class="products_table_status">STATUS</td>
-                <td>DISCOUNT</td>
-                <td>DETAILS</td>
-                <td>PUBLISHED</td>
-                <td>ACTIONS</td>
-              </tr>
-            </thead>
-            <tr class="dash_recent_table_row">
-              <td>9AF3DF</td>
-              <td>
-                <img src="assets/img/p-0.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Freshmaker Wipes
-              </td>
-              <td>Baby Care</td>
-              <td>Rs. 250</td>
-              <td>109</td>
-              <td>
-                <span class="dash_recent_table_row_deliver">Selling</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF4F8</td>
-              <td>
-                <img src="assets/img/p-1.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Calabaza Squash
-              </td>
-              <td>Fruits & Vegetable</td>
-              <td>Rs. 1050</td>
-              <td>0</td>
-              <td>
-                <span class="dash_recent_table_row_cancel">Sold Out</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF4F9</td>
-              <td>
-                <img src="assets/img/p-2.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Blueberry
-              </td>
-              <td>Fruits & Vegetable</td>
-              <td>Rs. 80</td>
-              <td>61</td>
-              <td>
-                <span class="dash_recent_table_row_deliver">Selling</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF3DF</td>
-              <td>
-                <img src="assets/img/p-3.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Freshmaker Wipes
-              </td>
-              <td>Baby Care</td>
-              <td>Rs. 250</td>
-              <td>109</td>
-              <td>
-                <span class="dash_recent_table_row_deliver">Selling</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF40A</td>
-              <td>
-                <img src="assets/img/p-4.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Goddess Garden Sunscreen
-              </td>
-              <td>Beauty & Health</td>
-              <td>Rs. 805</td>
-              <td>100</td>
-              <td>
-                <span class="dash_recent_table_row_deliver">Selling</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF412</td>
-              <td>
-                <img src="assets/img/p-0.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Aussiebee Honey
-              </td>
-              <td>Honey</td>
-              <td>Rs. 1600</td>
-              <td>7</td>
-              <td>
-                <span class="dash_recent_table_row_deliver">Selling</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF412</td>
-              <td>
-                <img src="assets/img/p-1.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Doodles Noodles
-              </td>
-              <td>Snacks & Instant</td>
-              <td>Rs. 45</td>
-              <td>0</td>
-              <td>
-                <span class="dash_recent_table_row_cancel">Sold Out</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF3DF</td>
-              <td>
-                <img src="assets/img/p-2.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Freshmaker Wipes
-              </td>
-              <td>Baby Care</td>
-              <td>Rs. 250</td>
-              <td>109</td>
-              <td>
-                <span class="dash_recent_table_row_deliver">Selling</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF437</td>
-              <td>
-                <img src="assets/img/p-3.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Bird Toy
-              </td>
-              <td>Household Tools</td>
-              <td>Rs. 150</td>
-              <td>0</td>
-              <td>
-                <span class="dash_recent_table_row_cancel">Sold Out</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-            <tr class="dash_recent_table_row">
-              <td>9AF429</td>
-              <td>
-                <img src="assets/img/p-4.jpg" width="30px" class="pe-1 rounded-circle" alt="">
-                Popsicle Dog Collar
-              </td>
-              <td>Pet Care</td>
-              <td>Rs. 50</td>
-              <td>89</td>
-              <td>
-                <span class="dash_recent_table_row_deliver">Selling</span>
-              </td>
-              <td></td>
-              <td>
-                <a href="" class="products_table_view_icon">
-                  <i class="bi bi-eye"></i>
-                </a>
-              </td>
-              <td><input type="radio"></td>
-              <td>
-                <a class="me-2 products_table_edit_icon" data-bs-toggle="offcanvas" href="#addProductOffCanvas" role="button" aria-controls="addProductOffCanvas">
-                  <i class="bi bi-pencil-square"></i>
-                </a>
-                <a href="" class="products_table_del_icon">
-                  <i class="bi bi-trash3"></i>
-                </a>
-              </td>
-            </tr>
-          </table>
+      <!-- Details -->
+      <section class="row g-4 my-1">
+        <div class="col-md-5">
+            <img src="assets/img/p-0.jpg" width="100%" alt="">
         </div>
-        <div
-          class="dash_recent_table_head d-flex align-items-center justify-content-between px-3 py-2"
-        >
-          <div colspan="2">SHOWING 1-10 OF 50</div>
-          <div colspan="4" class="">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination m-0">
-                <li class="page-item">
-                  <a class="page-link page_link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link page_link" href="#">1</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link page_link" href="#">2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link page_link" href="#">3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link page_link" href="#">4</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link page_link" href="#">5</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link page_link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+        <div class="col-md-7">
+            <div>
+                <div class="product_details_status">
+                    <span>Status:</span>
+                    <span>Published</span>
+                </div>
+                <div class="product_details_title">
+                    Freshmaker Wipes
+                </div>
+                <div class="product_details_sku">
+                    <span>SKU:</span>
+                    <span>9AF3DF</span>
+                </div>
+                <div class="product_details_title mt-3">Rs. 850</div>
+                <div class="d-flex align-items-center">
+                    <span class="dash_recent_table_row_deliver product_details_stock me-3">In Stock</span>
+                    <div class="product_details_sku"><span>Quantity:</span> <span>100</span></div>
+                </div>
+                <div class="product_details_description my-4">
+                    Baby Products are products intended to be used on infants and children under the age of three. Baby products are specially formulated to be mild and non-irritating and use ingredients that are selected for these properties. Baby products include baby shampoos and baby lotions, oils, powders and creams.
+                </div>
+                <div class="product_details_category">
+                    <span>Category:</span>
+                    <span>Health Care</span>
+                </div>
+                <form action="" class="mt-4">
+                    <button class="product_details_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#addProductOffCanvas" aria-controls="addProductOffCanvas">Edit Product</button>
+                </form>
+            </div>
         </div>
       </section>
+
     </main>
     <!-- Main -->
 
