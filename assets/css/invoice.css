@@ -1,0 +1,79 @@
+/* === Invoice Page === */
+
+.dash_recent_table{
+    width: 100%;
+}
+.dash_recent_table_head{
+    background-color: rgba(200, 200, 200, 0.3);
+    border: 1px solid rgb(200, 200, 200);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.dash_recent_table_head > td{
+    padding: 10px 10px;
+}
+.dash_recent_table_row{
+    border: 1px solid rgb(200, 200, 200);
+    background-color: white;
+}
+.dash_recent_table_row > td{
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.invoice_logo_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 50px !important;
+}
+.invoice_logo_box_img{
+    width: 150px;
+}
+.invoice_header_box{
+    padding-bottom: 40px !important;
+}
+.invoice_payment_box{
+    padding-top: 40px !important;
+}
+.invoice_header_box,
+.invoice_payment_box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.invoice_heading{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+.invoice_text{
+    font-size: 16px;
+    color: #555555;
+}
+.invoice_subtext{
+    font-size: 16px;
+    color: #555555;
+    font-weight: 500;
+}
+.invoice_header_boxes{
+    max-width: 27%;
+}
+.invoice_table_product_price{
+    min-width: 100px;
+}
+.invoice_total_text{
+    color: red;
+    font-size: 18px;
+    font-weight: 700;
+}
+.invoice_table_product_bold{
+    font-weight: 600;
+    color: black;
+}
+.invoice_table_product_price_total{
+    color: red;
+    font-weight: 600;
+}

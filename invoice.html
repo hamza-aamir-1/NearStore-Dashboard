@@ -123,6 +123,114 @@
     <!-- === Main === -->
     <main class="p-4 container-fluid dash_main">
       <div class="dash_section_heading">Invoice</div>
+
+      <!-- Invoice -->
+      <section class="dash_overview_sm_box my-4 p-4" id="invoice">
+
+        <div class="mb-4 invoice_logo_box">
+            <div class="text-uppercase h5 fw-bold invoice_logo_box_text">
+              Invoice
+            </div>
+              <div class="invoice_logo_box_img">
+                <img src="assets/img/logo-text.png" width="100%" alt="">
+              </div>
+          </div>
+
+        <div class="mb-4 invoice_header_box">
+            <div class="invoice_header_boxes">
+              <div class="invoice_heading">DATE</div>
+              <div class="invoice_text">April 11, 2022</div>
+            </div>
+            <div class="invoice_header_boxes">
+              <div class="invoice_heading">INVOICE NO</div>
+              <div class="invoice_text">#10012</div>
+            </div>
+            <div class="invoice_header_boxes">
+              <div class="invoice_heading">INVOICE TO</div>
+              <div class="invoice_text">
+                MD. Jahid Hossain Mridha House 3, Road 6, Block B, Dhaka, Bangladesh, 1219
+              </div>
+            </div>
+        </div>
+
+        <div class="table-responsive p-0">
+          <table class="dash_recent_table m-0">
+            <thead>
+              <tr class="dash_recent_table_head">
+                <td>SR.</td>
+                <td class="products_table_product_name">PRODUCT NAME</td>
+                <td>QUANTITY</td>
+                <td class="invoice_table_product_price">ITEM PRICE</td>
+                <td>AMOUNT</td>
+              </tr>
+            </thead>
+            <tr class="dash_recent_table_row">
+              <td>1</td>
+              <td>Infinix Hot 9 Play</td>
+              <td class="invoice_table_product_bold">1</td>
+              <td class="invoice_table_product_bold">Rs. 18999</td>
+              <td class="invoice_table_product_price_total">Rs. 18999</td>
+            </tr>
+            <tr class="dash_recent_table_row">
+              <td>2</td>
+              <td>Calabaza Squash</td>
+              <td class="invoice_table_product_bold">1</td>
+              <td class="invoice_table_product_bold">Rs. 1149</td>
+              <td class="invoice_table_product_price_total">Rs. 1149</td>
+            </tr>
+            <tr class="dash_recent_table_row">
+              <td>3</td>
+              <td>Goddess Garden Sunscreen</td>
+              <td class="invoice_table_product_bold">2</td>
+              <td class="invoice_table_product_bold">Rs. 1599</td>
+              <td class="invoice_table_product_price_total">Rs. 3198</td>
+            </tr>
+            <tr class="dash_recent_table_row">
+              <td>4</td>
+              <td>Rainbow Peppers</td>
+              <td class="invoice_table_product_bold">4</td>
+              <td class="invoice_table_product_bold">Rs. 150</td>
+              <td class="invoice_table_product_price_total">Rs. 600</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="invoice_payment_box mt-4">
+          <div class="invoice_payment_boxes">
+            <div class="invoice_heading">PAYMENT METHOD</div>
+            <div class="invoice_subtext">COD</div>
+          </div>
+          <div class="invoice_payment_boxes">
+            <div class="invoice_heading">SHIPPING COST</div>
+            <div class="invoice_subtext">Rs. 450</div>
+          </div>
+          <div class="invoice_payment_boxes">
+            <div class="invoice_heading">Discount.</div>
+            <div class="invoice_subtext">Rs. 0</div>
+          </div>
+          <div class="invoice_payment_boxes">
+            <div class="invoice_heading">TOTAL AMOUNT</div>
+            <div class="invoice_total_text">Rs. 20980</div>
+          </div>
+      </div>
+
+      </section>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="products_filter_btn" type="button">
+            Download Invoice
+            <i class="bi bi-download ms-1"></i>
+          </button>
+        </div>
+        <div>
+          <button class="products_filter_btn" type="button" onclick="printInvoiceFun()">
+            Print Invoice
+            <i class="bi bi-printer ms-1"></i>
+          </button>
+        </div>
+      </div>
+
     </main>
     <!-- Main -->
 
