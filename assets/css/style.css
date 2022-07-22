@@ -418,9 +418,16 @@
 
 
 
+/* === Customers Page === */
+.customers_table_user_name{
+    min-width: 190px;
+}
+
+
+
 /* === Orders Page === */
 .orders_table_product_time{
-    min-width: 100px;
+    min-width: 110px;
 }
 .orders_table_product_action{
     min-width: 100px;
